@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Satisfaction Survey</title>
+    <style>
+        /* Background with a light gray gradient */
+        body {
+            text-align: left;
+            background: linear-gradient(to bottom, #EAEAEA, #D6D6D6);
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+
+        /* Container to hold form */
+        .container {
+            max-width: 700px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Table styling */
+        table {
+            margin: 0 auto;
+            background: #EAEAEA;
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        th, td {
+            padding: 8px;
+            border: 2px solid #1B3A57;
+            text-align: left;
+            color: #1B3A57;
+        }
+
+        th {
+            background: #1B3A57;
+            color: white;
+        }
+
+        /* Button styles */
+        button {
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 5px;
+            margin: 5px;
+        }
+
+        .submit {
+            background-color: #1B3A57; /* Dark Blue */
+            color: white;
+        }
+
+        .reset {
+            background-color: #EAEAEA; /* Light Gray */
+            color: #1B3A57;
+            border: 1px solid #1B3A57;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <form>  
+            <h1>Survey Form</h1>
+            <hr/>
+
+            <h3 style="background-color: #EAEAEA; padding:10px; color: #1B3A57;">SECTION 1</h3>
+            
+            <p>
+                1.1 Which of the following devices do you use? <br>
+                <input type="checkbox" name="pictype" value="cross"> Service 1 
+                <input type="checkbox" name="pictype" value="cross"> Service 2 <br>
+                <input type="checkbox" name="pictype" value="cross"> Service 3 
+                <input type="checkbox" name="pictype" value="cross"> Service 4 <br>
+                <input type="checkbox" name="pictype" value="cross"> Other 
+                <textarea name="other_device" rows="1" cols="30"></textarea>
+            </p>
+            
+            <p>
+                1.2 How would you rate our services in terms of:
+                <table> 
+                    <tr>
+                        <th width="300"></th> 
+                        <th width="80">EXCELLENT</th>
+                        <th width="80">VERY GOOD</th>
+                        <th width="80">GOOD</th>
+                        <th width="80">FAIR</th>
+                        <th width="80">POOR</th>
+                    </tr>
+
+                    <tr align="center">
+                        <td>Your Overall Experience</td>
+                        <td> <input type="radio" name="overall_experience" value="excellent"> </td>
+                        <td> <input type="radio" name="overall_experience" value="very_good"> </td>
+                        <td> <input type="radio" name="overall_experience" value="good"> </td>
+                        <td> <input type="radio" name="overall_experience" value="fair"> </td>
+                        <td> <input type="radio" name="overall_experience" value="poor"> </td>
+                    </tr>
+
+                    <tr align="center">
+                        <td>The Value of our service</td>
+                        <td> <input type="radio" name="service_value" value="excellent"> </td>
+                        <td> <input type="radio" name="service_value" value="very_good"> </td>
+                        <td> <input type="radio" name="service_value" value="good"> </td>
+                        <td> <input type="radio" name="service_value" value="fair"> </td>
+                        <td> <input type="radio" name="service_value" value="poor"> </td>
+                    </tr>
+
+                    <tr align="center">
+                        <td>Promptness of our service</td>
+                        <td> <input type="radio" name="service_promptness" value="excellent"> </td>
+                        <td> <input type="radio" name="service_promptness" value="very_good"> </td>
+                        <td> <input type="radio" name="service_promptness" value="good"> </td>
+                        <td> <input type="radio" name="service_promptness" value="fair"> </td>
+                        <td> <input type="radio" name="service_promptness" value="poor"> </td>
+                    </tr>
+
+                    <tr align="center">
+                        <td>Courtesy of our staff</td>
+                        <td> <input type="radio" name="staff_courtesy" value="excellent"> </td>
+                        <td> <input type="radio" name="staff_courtesy" value="very_good"> </td>
+                        <td> <input type="radio" name="staff_courtesy" value="good"> </td>
+                        <td> <input type="radio" name="staff_courtesy" value="fair"> </td>
+                        <td> <input type="radio" name="staff_courtesy" value="poor"> </td>
+                    </tr>
+                </table>                              
+            </p>
+
+            <p> 1.3 Any comments or suggestions:</p>
+            <textarea name="comments" rows="4" cols="80"></textarea>
+
+            <p style="background-color: #EAEAEA; padding:10px; font-size: 18px; font-weight: bold; font-family: Arial, sans-serif; color: #1B3A57;">SECTION 2</p>
+
+    
+            <p> 2.1 How may we reach you? (optional)</p>
+            <label style="color: #1B3A57;">Your Name:</label> <input type="text" name="name" size="30"> <br><br>
+            <label style="color: #1B3A57;">Phone:</label> <input type="text" name="phone" size="30"> <br><br>
+            <label style="color: #1B3A57;">Email:</label> <input type="email" name="email" size="30"> <br><br>
+
+            <p>
+                <button type="submit" class="submit">Submit</button>
+                <button type="reset" class="reset">Reset</button>
+            </p>
+        </form>
+    </div>
+    
+</body>
+</html>
